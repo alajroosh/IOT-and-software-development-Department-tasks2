@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: #555;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="content">
+<div>
+  <center><input type="button"  onclick="window.location.href='./control.html';" value="control the motors" ><center/>
+<hr>
+</div>
+<h1>Movement Control</h1>
+
+<form name=form1 action="change.php" method="POST">
+  <label for="vol">Choose Direction</label>
+  <center>
+  <input type="submit" id="Forward" name="Forward" value="Forward"/>
+  <br>
+  <input type="submit" id="Left" name="Left" value="Left"/>
+  <input type="submit" id="Stop" name="Stop" value="Stop"/>
+  <input type="submit" id="Right" name="Right" value="Right"/>
+  <br>
+  <input type="submit" id="Backward" name="Backward" value="Backward"/>
+  <center/>
+</form>
+<hr>
+<form name=form2 action="direction.php">
+  <input type="submit" value="current direction">
+  </form>
+  
+</div>
+
+</body>
+</html>
